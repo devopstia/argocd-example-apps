@@ -1,0 +1,20 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: helm-guestbook
+  namespace: argo-cd
+spec:
+  destination:
+    namespace: helm-guestbook
+    server: "https://kubernetes.default.svc"
+  project: default
+  source:
+    path: helm-guestbook
+    repoURL: "https://github.com/devopstia/argocd-example-apps.git"
+    targetRevision: master
+  syncPolicy:
+    syncOptions:
+      - CreateNamespace=true
+  # Use Helm values file for customizations
+  helm:
+    values: tia/helm-guestbook.yaml # Reference the Helm values file
