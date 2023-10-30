@@ -15,6 +15,15 @@ spec:
   syncPolicy:
     syncOptions:
       - CreateNamespace=true
-  # Use Helm values file for customizations
+      - Prune=true
+  # Specify the Helm chart values file to use.
+  helm:
+    valueFiles:
+      - ./tia/helm-guestbook.yaml # Reference the Helm values file
+
+
+
+
+
   helm:
     values: tia/helm-guestbook.yaml # Reference the Helm values file
