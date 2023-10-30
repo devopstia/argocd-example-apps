@@ -22,8 +22,3 @@ spec:
       - ./tia/helm-guestbook.yaml # Reference the Helm values file
 
 
-
-
-
-  helm:
-    values: tia/helm-guestbook.yaml # Reference the Helm values file
