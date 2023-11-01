@@ -6,9 +6,9 @@ replicaCount: 2
 #   tag: ""
 
 image:
-  repository: devopseasylearning2021/canary-dev
+  repository: leonardtia/articles
   pullPolicy: IfNotPresent
-  tag: "236c2"
+  tag: "develop"
 
 fullnameOverride: "nginx"
 
