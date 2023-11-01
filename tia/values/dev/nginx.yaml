@@ -1,14 +1,14 @@
 replicaCount: 5
 
-# image:
-#   repository: nginx
-#   pullPolicy: IfNotPresent
-#   tag: ""
-
-  image:
-  repository: leonardtia/articles
+image:
+  repository: nginx
   pullPolicy: IfNotPresent
-  tag: "develop"
+  tag: ""
+
+  # image:
+  # repository: leonardtia/articles
+  # pullPolicy: IfNotPresent
+  # tag: "develop"
 
 fullnameOverride: "nginx"
 
