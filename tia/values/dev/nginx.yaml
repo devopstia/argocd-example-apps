@@ -1,15 +1,18 @@
 replicaCount: 5
 
-image:
-  repository: nginx
+# image:
+#   repository: nginx
+#   pullPolicy: IfNotPresent
+#   tag: ""
+
+  image:
+  repository: leonardtia/articles
   pullPolicy: IfNotPresent
-  tag: ""
+  tag: "develop"
 
 fullnameOverride: "nginx"
 
 service:
   type: NodePort
-  port: 80
-  targetPort: 8070
 
 nodeSelector: {}
