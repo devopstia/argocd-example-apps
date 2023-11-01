@@ -1,4 +1,4 @@
-replicaCount: 2
+replicaCount: 5
 
 image:
   repository: nginx
@@ -10,6 +10,6 @@ fullnameOverride: "nginx"
 service:
   type: NodePort
   port: 80
-  targetPort: 8070
+  # targetPort: 8070
 
 nodeSelector: {}
