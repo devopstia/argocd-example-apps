@@ -5,8 +5,13 @@ replicaCount: 2
 #   pullPolicy: IfNotPresent
 #   tag: ""
 
+# image:
+#   repository: leonardtia/articles
+#   pullPolicy: IfNotPresent
+#   tag: "develop"
+
 image:
-  repository: leonardtia/articles
+  repository: leonardtia/phone
   pullPolicy: IfNotPresent
   tag: "develop"
 
