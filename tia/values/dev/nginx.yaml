@@ -8,7 +8,8 @@ image:
 fullnameOverride: "nginx"
 
 service:
-  type: ClusterIP
+  type: NodePort
   port: 80
+  targetPort: 8070
 
 nodeSelector: {}
