@@ -1,18 +1,19 @@
-replicaCount: 5
+replicaCount: 2
+
+# image:
+#   repository: nginx
+#   pullPolicy: IfNotPresent
+#   tag: ""
 
 image:
-  repository: nginx
+  repository: devopseasylearning2021/canary-dev
   pullPolicy: IfNotPresent
-  tag: ""
-
-  # image:
-  # repository: leonardtia/articles
-  # pullPolicy: IfNotPresent
-  # tag: "develop"
+  tag: "236c2"
 
 fullnameOverride: "nginx"
 
 service:
   type: NodePort
+  port: 80
 
 nodeSelector: {}
